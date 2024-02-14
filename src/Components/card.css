@@ -1,0 +1,68 @@
+.container {
+    margin-top: 50px;
+    display: flex;
+    padding-left: 500px;
+}
+
+.aButton {
+    border: 0px solid rgba(153, 153, 153, 0.497);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 25px;
+    width: 200px;
+    line-height: 0.5;
+    background-color: rgb(59, 59, 59);
+    color : #ffffff;
+    font-size: 50px;
+}
+
+.aButton:hover {
+    cursor: pointer;
+}
+
+.cButton-active{
+    border-radius: 0px;
+    border: 1px solid rgba(153, 153, 153, 0.497);
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 25px;
+    width: 950px;
+    height: 450px;
+    line-height: 0.5;
+    background-color: rgb(255, 255, 255);
+    color : #000000;
+    font-size: 30px;
+}
+.cButton {
+    border-radius: 0px;
+    border: 1px solid rgba(153, 153, 153, 0.497);
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 25px;
+    width: 950px;
+    height: 450px;
+    line-height: 0.5;
+    background-color: rgb(255, 255, 255);
+    color : #000000;
+    font-size: 30px;
+}
+.cButton:hover {
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px black;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    border-radius: 0px;
+}
