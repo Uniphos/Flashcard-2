@@ -31,30 +31,48 @@ function Card() {
   ]);
 
   const [isActive, setIsActive] = useState(false);
-  const [randomIndex, setRandomIndex] = useState(0);
+  const [indexValue, setIndexValue] = useState(0);
 
   const handleClick = () => {
     setIsActive(!isActive);
   };
 
   const handleNext = () => {
-    let newIndex = Math.floor(Math.random() * (questions.length - 1)) + 1;
-    setRandomIndex(newIndex);
-    
     setIsActive(false);
+
+    setIndexValue(indexValue + 1);
   };
+
+  const handleBack = () => {
+    setIsActive(false);
+    setIndexValue(indexValue - 1);
+    if (indexValue <= 0) {
+      setIndexValue(0);
+    }
+  }
+
+  const checkanswer = () => { 
+
+  }
 
   return (
     <div className="card">
       <h5>Number of questions: {questions.length - 1}</h5>
       <button className={isActive ? "cButton-active" : "cButton"} onClick={handleClick}>
-        <div>
-          {isActive ?  answers[randomIndex].ans : questions[randomIndex].quest}
+        <div className="flipCard">
+          {isActive ?  answers[indexValue].ans : questions[indexValue].quest}
           <br />
-          {isActive ? answers[randomIndex].photo : questions[randomIndex].photo}
+          {isActive ? answers[indexValue].photo : questions[indexValue].photo}
         </div>
       </button>
+      <div className="text-box">
+      <h3>guess the answer here</h3>
+
+      <button className="checkanswer" onClick={checkanswer}>Check Answer</button>
+      </div>
       <div className="container">
+        <button className="aButton" onClick={handleBack}>back</button>
+
         <button className="aButton" onClick={handleNext}>Next</button>
       </div>
     </div>

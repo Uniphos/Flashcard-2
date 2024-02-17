@@ -1,7 +1,7 @@
 .container {
     margin-top: 50px;
     display: flex;
-    padding-left: 500px;
+    padding-left: 400px;
 }
 
 .aButton {
@@ -54,6 +54,29 @@
     cursor: pointer;
 }
 
+.checkAnswer {
+    border: 0px solid rgba(153, 153, 153, 0.497);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 25px;
+    margin-top: 50px; /* Add spacing */
+    width: 200px;
+    line-height: 0.5;
+    background-color: rgb(59, 59, 59);
+    color : #ffffff;
+    font-size: 50px;
+}
+
+.text-box {
+    display : flex;
+    margin: 20px;
+    justify-content: center; /* aligns items horizontally to the center */
+    align-items: center; /* aligns items vertically to the center */
+    margin: auto; /* centers the element itself */
+}
+
 h5 {
     font-size: 20px;
     color: #ffffff;
@@ -65,4 +88,7 @@ img {
     height: 25%;
     object-fit: cover;
     border-radius: 0px;
+}
+h3 {
+    margin-right: 20px; 
 }
